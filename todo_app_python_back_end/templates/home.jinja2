@@ -1,0 +1,16 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <div id="add-block">
+    <div>
+      Add a task
+    </div>
+    <div>
+      <form action="/add" method="post">
+        <input type="text" id="name" name="name" placeholder="Task name">
+        <input type="submit" value="Add">
+    </div>
+  </div>
+</div>
+{% endblock content %}

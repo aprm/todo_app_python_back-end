@@ -1,0 +1,10 @@
+body {
+    display: flex;
+}
+
+#add-block form {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+}
