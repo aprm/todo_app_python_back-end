@@ -15,7 +15,7 @@ Local develpment
 3. `cd` into the project directory.
 4. Run `pip install -e .` to install the project in editable mode.
 5. Run `pip install -e ."[testing]"` to install testing requirements.
-6. [Optional] Create / upgrade the database with `alembic -c development.ini upgrade head`
+6. [If not done yet] Create / upgrade the database with `alembic -c development.ini upgrade head`
 7. Run `pserve development.ini --reload` to start the local development server.
 
 Local database upgrade
@@ -24,7 +24,7 @@ Local database upgrade
 
 Running tests
 -------------
-1. TBA
+1. Run `pytest` from the project directory.
 
 Running the application in production
 -------------------------------------
