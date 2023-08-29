@@ -3,13 +3,25 @@
 {% block content %}
 <div class="content">
   <div id="add-block">
-    <div>
-      Add a task
-    </div>
+    <div class="header">Add a task</div>
     <div>
       <form action="/add" method="post">
-        <input type="text" id="name" name="name" placeholder="Task name">
-        <input type="submit" value="Add">
+        <input type="text" id="name" name="name" placeholder="Task name" />
+        <input type="submit" value="Add" />
+      </form>
+    </div>
+    <hr />
+    <div id="todolist-block">
+      <div class="header">To Do List</div>
+      <div id="tasks">
+        {% for item in todolist %}
+          <div class="task">
+            <div class="task-name">
+              {{ item.name }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

@@ -1,10 +1,38 @@
 body {
     display: flex;
+    justify-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #add-block form {
     width: 100%;
     display: flex;
     gap: 10px;
+}
 
+#tasks {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.task {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.task:not(:last-child) {
+    border-bottom: 1px solid silver;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
