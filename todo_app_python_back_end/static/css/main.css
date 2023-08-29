@@ -29,10 +29,36 @@ body {
 .task {
     padding-top: 5px;
     padding-bottom: 5px;
+    display: flex;
+    gap: 10px;
 }
 
 .task:not(:last-child) {
     border-bottom: 1px solid silver;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.task-name {
+    flex-grow: 1;
+}
+
+.delete-button {
+    background-color: #ff8a8a;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-button {
+    background-color: #8aff8a;
+    border: 1px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-complete.disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
 }

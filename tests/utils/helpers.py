@@ -13,11 +13,22 @@ class MockDbSession:
         self.items = []
 
     def query(self, cls_):
-        return Mock(all=lambda: self.items)
-    
+        return Mock(
+            all=lambda: self.items,
+            # todo: improve this to consider the filter_by parameters
+            filter_by=Mock(
+                return_value=Mock(
+                    first=lambda: self.items[0]
+                )
+            )
+        )
+
     def add(self, item):
         self.items.append(item)
-    
+
+    def delete(self, item):
+        self.items.remove(item)
+
     @staticmethod
     def flush():
         pass

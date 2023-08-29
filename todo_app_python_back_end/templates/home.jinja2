@@ -17,7 +17,19 @@
         {% for item in todolist %}
           <div class="task">
             <div class="task-name">
-              {{ item.name }}
+              {{ '[DONE] ' if item.completed else ''}}{{ item.name }}
+            </div>
+            <div class="task-complete {{ 'disabled' if item.completed else ''}}">
+              <form action="/complete" method="post">
+                  <input type="hidden" name="id" value="{{ item.id }}" />
+                  <input class="complete-button" type="submit" value="Complete" />
+              </form>
+            </div>
+            <div class="task-delete">
+              <form action="/delete" method="post">
+                <input type="hidden" name="id" value="{{ item.id }}" />
+                <input class="delete-button" type="submit" value="Delete" />
+              </form>
             </div>
           </div>
         {% endfor %}
