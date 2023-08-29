@@ -161,3 +161,4 @@ cython_debug/
 
 # local DB file
 todo_app_python_back_end.sqlite
+.DS_Store
