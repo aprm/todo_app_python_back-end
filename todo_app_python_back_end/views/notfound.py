@@ -1,3 +1,7 @@
+"""
+This module contains the view for the 404 page.
+"""
+
 from pyramid.view import notfound_view_config
 
 

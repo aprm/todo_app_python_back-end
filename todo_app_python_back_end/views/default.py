@@ -1,3 +1,7 @@
+"""
+This module contains the views for the todo app.
+# TODO: add service and persistence layers if the code gets more complex
+"""
 from pyramid.view import view_config
 from pyramid.response import Response
 from sqlalchemy.exc import SQLAlchemyError
