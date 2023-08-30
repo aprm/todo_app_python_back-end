@@ -36,7 +36,7 @@ class MockDbSession:
 
 def get_mock_request(post_params=None):
     """
-    Returns a mocked Pyramid request object.
+    Returns a mocked Pyramid request object with a mocked database session.
     """
     return DummyRequest(
         dbsession=MockDbSession(),
