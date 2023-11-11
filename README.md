@@ -5,9 +5,9 @@ A simple todo app back-end written in Python using Pyramid and SQLAlchemy.
 
 Requirements
 ------------
-- Python 3.8+
-- [Install Pip](https://pip.pypa.io/en/stable/installation/#installation) (if not available), or upgrade to the latest version with `pip install --upgrade pip`
-
+- Python 3.8 or higher
+- Pip 19.0 or higher
+- Docker 19.03 or higher (optional, for running the application in Docker)
 
 Local develpment
 ----------
