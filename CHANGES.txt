@@ -1,4 +1,22 @@
-1.0.0
+release-4
 ---
 
-- Initial version.
+- Add 'delete item', 'complete item' functionality and unit tests.
+
+
+release-3
+---
+
+- Add 'list items' functionality and unit tests.
+
+
+release-2
+---
+
+- Add unit tests for 'add item' functionality.
+
+
+release-1
+---
+
+- Initial version. Add ability to add Todo items.
