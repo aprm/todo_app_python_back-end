@@ -4,10 +4,10 @@ COPY . /tmp/todo_app
 RUN cd /tmp/todo_app && \
     # install dependencies
     apk add --no-cache python3 && \
-    apk add gettext && \
+    apk add --no-cache gettext && \
     wget https://bootstrap.pypa.io/get-pip.py && \
     python3 get-pip.py && \
-    # copy config and db files and install app
+    # copy config and local db files and install app
     cp production.ini /etc/production.ini && \
     cp todo_app_python_back_end.sqlite /var/todo_app_python_back_end.sqlite && \
     cp entrypoint.sh /entrypoint.sh && \
